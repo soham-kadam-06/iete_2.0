@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #020506;
+  --foreground: #effffc;
+  --accent: #2de0cb;
 }
 
 @theme inline {
@@ -25,6 +26,62 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.site-main {
+  background: rgb(2 5 6 / 72%);
+}
+
+.site-main > section {
+  background-color: rgb(2 5 6 / 78%) !important;
+}
+
+.site-main [class*="text-slate-900"] {
+  color: #effffc !important;
+}
+
+.site-main [class*="text-slate-700"],
+.site-main [class*="text-slate-600"] {
+  color: #b4d1cd !important;
+}
+
+.site-main [class*="text-slate-500"] {
+  color: #80aaa4 !important;
+}
+
+.site-main [class*="border-slate-"] {
+  border-color: rgb(45 224 203 / 28%) !important;
+}
+
+.site-main [class*="bg-white"],
+.site-main [class*="bg-slate-50"],
+.site-main [class*="bg-slate-100"] {
+  background-color: rgb(3 12 14 / 88%) !important;
+}
+
+.site-main [class~="bg-slate-900"] {
+  background-color: var(--accent) !important;
+  color: #00110f !important;
+}
+
+.site-main [class~="text-white"] {
+  color: #00110f !important;
+}
+
+.site-main a:not([class~="bg-slate-900"]),
+.site-main button {
+  outline-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 a {

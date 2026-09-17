@@ -23,15 +23,15 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-[#2DE0CB]/30 bg-black/85 backdrop-blur-sm">
       <nav aria-label="Main navigation" className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" aria-label="IETE SFIT home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 bg-slate-100 text-sm font-semibold text-slate-700">
+          <div className="flex h-10 w-10 items-center justify-center rounded-md border border-[#2DE0CB]/50 bg-[#2DE0CB]/10 text-sm font-semibold text-[#2DE0CB]">
             IETE
           </div>
           <div className="leading-tight">
-            <div className="text-sm font-semibold uppercase tracking-[0.15em] text-slate-900">IETE</div>
-            <div className="text-[10px] text-slate-500">SFIT</div>
+            <div className="text-sm font-semibold uppercase tracking-[0.15em] text-white">IETE</div>
+            <div className="text-[10px] text-[#80AAA4]">SFIT</div>
           </div>
         </Link>
 
@@ -44,7 +44,7 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${
-                  active ? "text-slate-900" : "text-slate-600 hover:text-slate-900"
+                  active ? "text-[#2DE0CB]" : "text-[#B4D1CD] hover:text-[#2DE0CB]"
                 }`}
               >
                 {item.label}
@@ -58,7 +58,7 @@ export default function Navbar() {
               href={item.href}
               target="_blank"
               rel="noreferrer"
-              className="text-sm font-medium text-slate-600 transition hover:text-slate-900"
+              className="text-sm font-medium text-[#B4D1CD] transition hover:text-[#2DE0CB]"
             >
               {item.label}
             </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md border border-slate-300 p-2 text-slate-700 md:hidden"
+          className="inline-flex items-center justify-center rounded-md border border-[#2DE0CB]/40 p-2 text-[#2DE0CB] md:hidden"
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"
           aria-label="Toggle menu"
@@ -85,7 +85,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div id="mobile-menu" className="border-t border-slate-200 bg-white md:hidden">
+        <div id="mobile-menu" className="border-t border-[#2DE0CB]/30 bg-black/95 md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6">
             {navItems.map((item) => {
               const active = pathname === item.href;
@@ -96,7 +96,7 @@ export default function Navbar() {
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
                   className={`rounded-md px-3 py-2 text-sm font-medium ${
-                    active ? "bg-slate-100 text-slate-900" : "text-slate-600 hover:bg-slate-50"
+                    active ? "bg-[#2DE0CB]/15 text-[#2DE0CB]" : "text-[#B4D1CD] hover:bg-[#2DE0CB]/10"
                   }`}
                 >
                   {item.label}
@@ -112,7 +112,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-[#B4D1CD] hover:bg-[#2DE0CB]/10 hover:text-[#2DE0CB]"
                 >
                   {item.label}
                 </a>
