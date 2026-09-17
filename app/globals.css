@@ -34,7 +34,25 @@ body {
 }
 
 .site-main {
-  background: rgb(2 5 6 / 72%);
+  position: relative;
+  background: linear-gradient(180deg, rgb(2 5 6 / 72%) 0%, rgb(2 5 6 / 76%) 100%);
+}
+
+.site-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 15%, rgba(45, 224, 203, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(123, 92, 255, 0.08), transparent 24%);
+  filter: blur(65px);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.site-main > section,
+.site-main > div {
+  position: relative;
+  z-index: 1;
 }
 
 .site-main > section {
