@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -13,9 +14,9 @@ const navItems = [
 ];
 
 const quickLinks = [
-  { href: "#", label: "Magazine" },
-  { href: "#", label: "Report" },
-  { href: "#", label: "SFIT" },
+  { href: "https://drive.google.com/drive/folders/18e-vmhSyp6MWnVtSb_HHEsKup_q0BYsb?usp=sharing", label: "Magazine" },
+  { href: "https://drive.google.com/drive/folders/18e-vmhSyp6MWnVtSb_HHEsKup_q0BYsb?usp=sharing", label: "Report" },
+  { href: "https://www.sfit.ac.in", label: "SFIT" },
 ];
 
 export default function Navbar() {
@@ -26,13 +27,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#2DE0CB]/30 bg-black/85 backdrop-blur-sm">
       <nav aria-label="Main navigation" className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" aria-label="IETE SFIT home">
-          <div className="flex h-10 w-10 items-center justify-center rounded-md border border-[#2DE0CB]/50 bg-[#2DE0CB]/10 text-sm font-semibold text-[#2DE0CB]">
-            IETE
-          </div>
-          <div className="leading-tight">
-            <div className="text-sm font-semibold uppercase tracking-[0.15em] text-white">IETE</div>
-            <div className="text-[10px] text-[#80AAA4]">SFIT</div>
-          </div>
+          <Image src="/iete-logo.png" alt="IETE SFIT" width={135} height={100} priority className="h-12 w-auto object-contain" />
         </Link>
 
         <div className="hidden items-center gap-6 md:flex">
