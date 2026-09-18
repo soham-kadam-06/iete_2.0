@@ -13,7 +13,7 @@ export default function GalleryPage() {
       <SectionHeading
         eyebrow="Gallery"
         title="Gallery"
-        description="Album-based gallery layout prepared for future Sanity-managed content."
+        description="Album-based gallery layout prepared for future chapter photography."
       />
 
       <GalleryGrid />

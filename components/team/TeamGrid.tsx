@@ -6,28 +6,28 @@ const members = [
     position: "Joint Head",
     department: "Electronics & Telecommunication",
     year: "TY",
-    bio: "Placeholder bio for a team member. This will eventually be managed through Sanity.",
+    bio: "A student leader contributing to the chapter’s technical community.",
   },
   {
     name: "Member Two",
     position: "Technical Lead",
     department: "Information Technology",
     year: "SY",
-    bio: "Placeholder bio for a team member. This will eventually be managed through Sanity.",
+    bio: "A student leader contributing to the chapter’s technical community.",
   },
   {
     name: "Member Three",
     position: "Event Coordinator",
     department: "Computer Engineering",
     year: "FY",
-    bio: "Placeholder bio for a team member. This will eventually be managed through Sanity.",
+    bio: "A student leader contributing to the chapter’s technical community.",
   },
   {
     name: "Member Four",
     position: "Marketing Lead",
     department: "Electronics",
     year: "TY",
-    bio: "Placeholder bio for a team member. This will eventually be managed through Sanity.",
+    bio: "A student leader contributing to the chapter’s technical community.",
   },
 ];
 

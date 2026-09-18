@@ -15,12 +15,12 @@ export default function EventsPreview() {
         <SectionHeading
           eyebrow="Featured Events"
           title="Upcoming highlights"
-          description="A section ready to display featured events from Sanity once CMS content is added."
+          description="A quick look at upcoming chapter events and activities."
         />
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {sampleEvents.map((event) => (
-            <article key={event.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <article key={event.title} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
               <div className="flex items-center justify-between text-xs font-medium uppercase tracking-[0.12em] text-slate-500">
                 <span>{event.type}</span>
                 <span>{event.date}</span>

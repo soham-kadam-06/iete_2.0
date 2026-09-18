@@ -1,0 +1,29 @@
+.rotating-text {
+  display: inline-flex;
+  min-width: 10ch;
+  vertical-align: baseline;
+}
+
+.rotating-text__word {
+  display: inline-flex;
+  overflow: hidden;
+  vertical-align: baseline;
+}
+
+.rotating-text__character {
+  display: inline-flex;
+  overflow: hidden;
+  vertical-align: baseline;
+}
+
+.rotating-text__character-inner {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-text__character-inner {
+    transition: none !important;
+    transform: none !important;
+  }
+}

@@ -13,7 +13,7 @@ export default function EventsPage() {
       <SectionHeading
         eyebrow="Events"
         title="Events"
-        description="The events archive is ready for Sanity-backed content and dynamic routing."
+        description="The events archive is ready for chapter events and dynamic routing."
       />
       <EventGrid />
     </Container>

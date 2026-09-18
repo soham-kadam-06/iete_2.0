@@ -15,12 +15,12 @@ export default function GalleryPreview() {
         <SectionHeading
           eyebrow="Gallery"
           title="Moments from the chapter"
-          description="Album-based gallery preview ready to connect to Sanity-managed event photography."
+          description="A visual preview of chapter events, workshops, and activities."
         />
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {albums.map((album) => (
-            <article key={album.title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <article key={album.title} className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60">
               <div className="flex h-52 items-center justify-center border-b border-slate-200 bg-slate-100 text-sm text-slate-500">
                 Cover image
               </div>

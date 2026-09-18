@@ -6,7 +6,7 @@ type GalleryAlbum = {
 
 export default function GalleryCard({ title, description, date }: GalleryAlbum) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <article className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60">
       <div className="flex h-52 items-center justify-center border-b border-slate-200 bg-slate-100 text-sm text-slate-500">
         Cover image placeholder
       </div>

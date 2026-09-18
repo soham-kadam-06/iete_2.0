@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "../components/effects/FaultyTerminal.css";
 import FaultyTerminal from "@/components/effects/FaultyTerminal";
-import Navbar from "@/components/layout/Navbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/layout/Footer";
 
 const geistSans = Geist({
@@ -38,20 +38,20 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           className="site-background"
           scale={1.5}
           gridMul={[2, 1]}
-          digitSize={1.2}
+          digitSize={1.1}
           timeScale={0.5}
-          scanlineIntensity={0.5}
+          scanlineIntensity={0.2}
           glitchAmount={1}
           flickerAmount={1}
           noiseAmp={1}
           chromaticAberration={0}
           dither={0}
           curvature={0.1}
-          tint="#2DE0CB"
-          mouseReact
-          mouseStrength={0.5}
+          tint="#99fcf7"
+          dpr={1}
+          mouseReact={false}
           pageLoadAnimation
-          brightness={0.6}
+          brightness={0.2}
         />
         <div className="site-shell flex min-h-screen flex-col">
           <Navbar />

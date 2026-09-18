@@ -15,12 +15,12 @@ export default function TeamPreview() {
         <SectionHeading
           eyebrow="Team"
           title="Student leadership"
-          description="The committee section is ready for a structured team profile list from Sanity."
+          description="Meet the students who help shape the chapter’s technical community."
         />
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {teamMembers.map((member) => (
-            <article key={member.name} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <article key={member.name} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
               <div className="flex h-28 w-full items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-100 text-sm text-slate-500">
                 Photo
               </div>

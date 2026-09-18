@@ -19,7 +19,7 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
     slug,
     shortDescription: "A placeholder event description for the development phase.",
     description:
-      "This event page is scaffolded and ready to load real content from Sanity once the CMS is configured.",
+      "This event page is scaffolded and ready for real event content once the content system is configured.",
     eventDate: "2026-09-30",
     startTime: "11:00",
     endTime: "13:00",

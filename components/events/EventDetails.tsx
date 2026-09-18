@@ -20,7 +20,7 @@ type EventDetailsProps = {
 export default function EventDetails({ event }: EventDetailsProps) {
   return (
     <article className="mx-auto max-w-4xl">
-      <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <div className="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/60">
         <div className="flex h-64 items-center justify-center border-b border-slate-200 bg-slate-100 text-slate-500">
           Event cover image placeholder
         </div>

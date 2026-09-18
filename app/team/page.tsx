@@ -13,7 +13,7 @@ export default function TeamPage() {
       <SectionHeading
         eyebrow="Team"
         title="Meet the team"
-        description="This section will eventually render team members from Sanity, with placeholder cards during development."
+        description="This section will present team members with structured profiles."
       />
       <TeamGrid />
     </Container>
